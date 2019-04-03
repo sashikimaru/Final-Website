@@ -1,9 +1,11 @@
-function setup() {
-  createCanvas(windowWidth, 500);
-}
-var value = 100;
 var x = 0;
 var y = 0;
+var value = 100;
+
+function setup() {
+  var canvas = createCanvas(windowWidth, 400);
+  canvas.parent('header');
+}
 
 function draw() {
   //over
@@ -108,7 +110,3 @@ y = pow(x,.5)+36;
   fill(250);
   text("Nam Nguyen",51,201);
 }  
-//function mousePressed() {
-//if(mouseY < 340) {value = 100;}
-  //else if(mouseY >= 340) {value = 0;}
-//}
