@@ -10,6 +10,7 @@ function setup() {
 function draw() {
 
 	background (21,1,77);
+	noStroke();
     if (x < 380){
 y = pow(x,.5)+36;
   x = x+.3;}
