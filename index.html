@@ -1,38 +1,113 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang= "en" dir = "ltr">
+    <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Nam Nguyen</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <script src="p5/p5.min.js"></script>
     <script src="p5/p5.js></script>
     <script src="p5/p5.dom.min.js"></script>
     <script src="p5/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
-  </head>
-  <body>
+          </head>
+    <body>
+                           
+    <div id="header"></div>
+                    <audio controls autoplay>
+                                              <source src = "music/Rain.mp3" type="audio/mpeg"> </audio>
+    <div class="container">
+	
+	<input type="radio" id="i1" name="images" checked />
+	<input type="radio" id="i2" name="images" />
+	<input type="radio" id="i3" name="images" />
+	<input type="radio" id="i4" name="images" />
+	<input type="radio" id="i5" name="images" />
+    <input type="radio" id="i6" name="images" />
+    <input type="radio" id="i7" name="images" />
+    <input type="radio" id="i8" name="images" />
+	
+	<div class="slide_img" id="one">			
+			
+			<img src="img/Project2.nguyen.2.jpg">
+			<div class="text"> The fight against amazement - </div>
+                             <div class="text"> A racoon holding itself back from the wonders that is happening before it. </div>
+				<label class="prev" for="i8"><span>&#x2039;</span></label>
+				<label class="next" for="i2"><span>&#x203a;</span></label>	
+		
+	</div>
+	
+	<div class="slide_img" id="two">
+		
+			<img src="img/Dada.nguyen.jpg" >
+			<div class="text"> The 15th of romaine -  </div>
+                             <div class="text"> A sign of the 15th of romaine. </div>
+				<label class="prev" for="i1"><span>&#x2039;</span></label>
+				<label class="next" for="i3"><span>&#x203a;</span></label>
+		
+	</div>
+			
+	<div class="slide_img" id="three">
+			<img src="img/seasons.jpg">	
+			<div class="text"> The Seasoned wolf -  </div>
+                             <div class="text"> The colors of the seasons as this wolf lives through the years. </div>
+				<label class="prev" for="i2"><span>&#x2039;</span></label>
+				<label class="next" for="i4"><span>&#x203a;</span></label>
+	</div>
 
-  <div id="header"></div>
-                  <div id="music"><embed src="music/Idealism - Rainy Evening [Full BeatTape].mp3" controls autoplay loop >
-                                               </div>
-      
-  <div id="portfolio">
-    
-    <img src="img/Dog1.png">
-    <img src="img/Dog2.png">
-    <img src="img/Dog3.png">
-    <img src="img/Dog4.png">
-    <img src="img/picture.png">
-    <img src="img/Spraypaint.nguyen.png">                       
-    <img src="img/DrawA.nguyen.png">                       
-    <img src="img/NguyenCat.jpg">                       
-    <img src="img/Project2.nguyen.1.jpg">                       
-    <img src="img/Project2.nguyen.2.jpg">                       
-    <img src="img/Project2.nguyen.3.jpg">
-                                        
-    <iframe src="https://giphy.com/embed/l57s5t9l3lvjvfAaWD" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>             
-  </div>  
+	<div class="slide_img" id="four">
+			<img src="img/Spraypaint.nguyen.png">	
+			<div class="text"> Form of a snake - </div>
+                             <div class="text"> The shed of skin still holds the foam of the snake. </div>
+				<label class="prev" for="i3"><span>&#x2039;</span></label>
+				<label class="next" for="i5"><span>&#x203a;</span></label>
+	</div>
 
-  </body>
+	<div class="slide_img" id="five">
+			<img src="img/Icons.png">	
+			<div class="text"> Apps for hobbies -  </div>
+                             <div class="text"> The information to help you with your hobbies. </div>
+				<label class="prev" for="i4"><span>&#x2039;</span></label>
+				<label class="next" for="i6"><span>&#x203a;</span></label>
+
+	</div>
+    <div class="slide_img" id="six">
+			<img src="img/p5.png">	
+			<div class="text"> Programmed art </div>
+                             <div class="text"> A solid and rigid foam in the city of cyberspace. </div>
+				<label class="prev" for="i5"><span>&#x2039;</span></label>
+				<label class="next" for="i7"><span>&#x203a;</span></label>
+
+	</div>                                        
+    <div class="slide_img" id="seven">
+			<img src="img/Mountain.gif">	
+			<div class="text"> The land beyond -  </div>
+                             <div class="text"> To fly beyond the top. </div>
+				<label class="prev" for="i6"><span>&#x2039;</span></label>
+				<label class="next" for="i8"><span>&#x203a;</span></label>
+
+	</div>
+    <div class="slide_img" id="eight">
+			<img src="img/pendant.gif">	
+			<div class="text"> Through the pendant glass -  </div>
+                             <div class="text"> The old peaceful views seen at night. </div>
+				<label class="prev" for="i7"><span>&#x2039;</span></label>
+				<label class="next" for="i1"><span>&#x203a;</span></label>
+
+	</div>                                        
+	<div id="nav_slide">
+		<label for="i1" class="dots" id="dot1"></label>
+		<label for="i2" class="dots" id="dot2"></label>
+		<label for="i3" class="dots" id="dot3"></label>
+		<label for="i4" class="dots" id="dot4"></label>
+		<label for="i5" class="dots" id="dot5"></label>
+        <label for="i6" class="dots" id="dot6"></label>
+        <label for="i7" class="dots" id="dot7"></label>
+        <label for="i8" class="dots" id="dot8"></label>
+	</div>
+		
+</div>
+                                              
+</body>
 </html>
