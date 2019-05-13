@@ -51,8 +51,7 @@ background-image:url('img/rain.gif');
 		height: inherit;
 		position: absolute;
 		top:0; 
-		background-color: rgba(88, 88, 88,.2);
-		color:rgba(244, 244, 244,.9);
+		
 		z-index: 99;
 		transition: .45s;
 		cursor: pointer;
@@ -72,7 +71,7 @@ background-image:url('img/rain.gif');
 	.prev:hover, .next:hover{
 		transition: .3s;
 		background-color: rgba(88, 88, 89,.8);
-		color: #ffffff; 
+		
 	}
 
 .container #nav_slide{
